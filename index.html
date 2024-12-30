@@ -9,6 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- social links for refinedguides.com -->
+    <script
+      src="https://refinedguides.com/assets/social.js?linkColor=%23fff&textColor=%23e8d7f1"
+      defer
+    ></script>
   </head>
   <body>
     <div class="container">
@@ -22,8 +27,9 @@
             id="billAmount"
             value="0"
             min="0"
-            step="0.01"
+            step="any"
             onfocus="this.select()"
+            inputmode="decimal"
           />
         </div>
 
@@ -57,7 +63,9 @@
                 id="customTip"
                 value="0"
                 min="0"
+                step="any"
                 onfocus="this.select()"
+                inputmode="decimal"
               />
             </div>
           </div>

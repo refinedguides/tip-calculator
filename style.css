@@ -31,7 +31,7 @@
 body {
   display: grid;
   place-items: center;
-  height: 100vh;
+  min-height: 100svh;
   color: var(--prussian-blue);
   background: var(--tekhelet);
   background: linear-gradient(

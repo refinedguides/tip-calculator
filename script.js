@@ -7,12 +7,12 @@ const ui = {
 };
 
 function initApp() {
-  ui.form.addEventListener("submit", onFormSubmit);
-  ui.form.addEventListener("reset", onFormReset);
-  document.addEventListener("DOMContentLoaded", onFormReset);
+  ui.form.addEventListener("submit", handleSubmit);
+  ui.form.addEventListener("reset", handleReset);
+  document.addEventListener("DOMContentLoaded", handleReset);
 }
 
-function onFormSubmit(e) {
+function handleSubmit(e) {
   e.preventDefault();
 
   // user inputs
@@ -33,7 +33,7 @@ function onFormSubmit(e) {
   displayResult(tipAmount, tipPerGuest, totalPerGuest);
 }
 
-function onFormReset() {
+function handleReset() {
   displayResult(0, 0, 0);
 }
 
